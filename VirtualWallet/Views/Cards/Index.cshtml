@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="centered-container">
+    <div class="content-box">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Add Card</h5>
+                    </div>
+                    <div class="card-body">
+                        <form asp-controller="Cards" asp-action="Create">
+                            <div class="mb-3">
+                                <label for="bank" class="form-label">Bank:</label>
+                                <input type="text" class="form-control" id="bank" name="bank" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="issuer" class="form-label">Issuer:</label>
+                                <input type="text" class="form-control" id="issuer" name="issuer" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="owner" class="form-label">Owner:</label>
+                                <input type="text" class="form-control" id="owner" name="owner" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Card Number:</label>
+                                <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cvv" class="form-label">CVV:</label>
+                                <input type="text" class="form-control" id="cvv" name="cvv" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="expirationDate" class="form-label">Expiration Date:</label>
+                                <input type="date" class="form-control" id="expirationDate" name="expirationDate" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

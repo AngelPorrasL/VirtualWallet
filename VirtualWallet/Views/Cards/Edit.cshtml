@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "No";
+}
+
+@* @model Card
+
+<div class="container">
+    <h2 class="my-4">Edit Card</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form asp-controller="Cards" asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Bank" class="form-control" required>
+                            <label asp-for="Bank">Bank:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Issuer" class="form-control" required>
+                            <label asp-for="Issuer">Issuer:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Owner" class="form-control" required>
+                            <label asp-for="Owner">Owner:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="CVV" class="form-control" required>
+                            <label asp-for="CVV">CVV:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="ExpirationDate" type="date" class="form-control" required>
+                            <label asp-for="ExpirationDate">Expiration Date:</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> *@
+
